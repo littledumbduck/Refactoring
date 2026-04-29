@@ -12,20 +12,20 @@ public class SmellySauceTest {
 
     @Test
     void completeFlow() throws InterruptedException {
-        // SMELL 2: Duplicate Code (Dispensable) - setup should be in @BeforeEach
+        // SMELL 2: Duplicate Code (Dispensable) - Setup should be in @BeforeEach
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.saucedemo.com/");
 
-        // SMELL 3: Long Method (Bloater) - This method is over 30 lines
-        // LOGIN LOGIC
+        // SMELL 3: Long Method (Bloater) - This method is too long
+        // LOGIN
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         driver.findElement(By.id("login-button")).click();
+        // SMELL 4: Feature Envy (Coupler) - Test is directly managing the page IDs
 
-        // SMELL 4: Feature Envy (Coupler) - Test is micromanaging the driver
-        // SMELL 5: Switch Statement (OO Abuser) - Replace with Polymorphism later
+        // SMELL 5: Switch Statement (OO Abuser) - Replace later to make the code more scalable
         String item = "Backpack";
         switch (item) {
             case "Backpack":
@@ -39,7 +39,7 @@ public class SmellySauceTest {
         // SMELL 6: Dead Code (Dispensable) - Unused variable
         String unusedVariable = "I am not used";
 
-        // SMELL 7: Divergent Change (Change Preventer) - Logic is mixed with hardcoded IDs
+        // SMELL 7: Divergent Change (Change Preventer) - Logic is mixed with ID, should use a variable instead
         driver.findElement(By.className("shopping_cart_link")).click();
 
         // ASSERTIONS
@@ -54,5 +54,5 @@ public class SmellySauceTest {
         System.out.println("Breaking encapsulation");
     }
 
-    // SMELL 10: Large Class (Bloater) - Once we add more tests, this file becomes huge
+    // SMELL 10: Large Class (Bloater) - Once we add more tests, this file becomes too big
 }
