@@ -14,6 +14,7 @@ public class SmellySauceTest {
 
     @Test
     void completeFlow() throws InterruptedException {
+        // SMELL 3: Long Method (Bloater) - This method is too long
         // SMELL 2: Duplicate Code (Dispensable) - Setup should be in @BeforeEach
         // Initializes the ChromeDriver and opens the browser window
         WebDriverManager.chromedriver().setup();
@@ -22,7 +23,6 @@ public class SmellySauceTest {
         // Navigates the browser to the target web application
         driver.get("https://www.saucedemo.com/");
 
-        // SMELL 3: Long Method (Bloater) - This method is too long
         // LOGIN
         // Locates input fields by ID and sends credentials
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
