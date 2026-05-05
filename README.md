@@ -22,7 +22,7 @@ Refactoring/
 ├── .idea/
 ├── .mvn/
 ├── docs
-│ └── The Clean Code & Automation Cycle.pdf  # Project presentation explaining the 10 code smells and their fixes
+│ └── The_Clean_Code_&_Automation_Cycle.pdf  # Project presentation explaining the 10 code smells and their fixes
 ├── src/
 │   ├── main/
 │   └── test/
@@ -101,4 +101,4 @@ We identified and resolved 10 specific code smells categorized into five major g
 3. **Run the Clean Test**: Execute `tests/CleanSauceTest.java` to see the refactored POM architecture in action.
 
 ## Documentation
-You can find the project refactoring presentation [here](./docs/The Clean Code & Automation Cycle.pdf)
+You can find the project refactoring presentation [here](./docs/The_Clean_Code_&_Automation_Cycle.pdf)
