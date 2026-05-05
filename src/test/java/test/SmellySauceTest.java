@@ -66,3 +66,5 @@ public class SmellySauceTest {
 
     // SMELL 10: Large Class (Bloater) - Once we add more tests, this file becomes too big
 }
+
+// version 1.0
