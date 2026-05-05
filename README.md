@@ -94,6 +94,6 @@ We identified and resolved 10 specific code smells categorized into five major g
 
 ### Execution
 
-1. **Clone the repo**: `git clone <your-repository-url>`
+1. **Clone the repo**: `git clone https://github.com/littledumbduck/Refactoring.git`
 2. **Run the Smelly Test**: Execute `SmellySauceTest.java` to see the functional but unoptimized version.
 3. **Run the Clean Test**: Execute `tests/CleanSauceTest.java` to see the refactored POM architecture in action.
