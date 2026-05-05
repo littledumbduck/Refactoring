@@ -21,6 +21,8 @@ From a technical perspective, the project serves as a **Refactoring Case Study**
 Refactoring/
 ├── .idea/
 ├── .mvn/
+├── docs
+│ └── The Clean Code & Automation Cycle.pdf  # Project presentation explaining the 10 code smells and their fixes
 ├── src/
 │   ├── main/
 │   └── test/
@@ -97,3 +99,6 @@ We identified and resolved 10 specific code smells categorized into five major g
 1. **Clone the repo**: `git clone https://github.com/littledumbduck/Refactoring.git`
 2. **Run the Smelly Test**: Execute `SmellySauceTest.java` to see the functional but unoptimized version.
 3. **Run the Clean Test**: Execute `tests/CleanSauceTest.java` to see the refactored POM architecture in action.
+
+## Documentation
+You can find the project refactoring presentation [here](./docs/The Clean Code & Automation Cycle.pdf)
