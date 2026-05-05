@@ -29,3 +29,5 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 }
+
+// version 2

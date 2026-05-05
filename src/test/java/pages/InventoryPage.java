@@ -33,3 +33,5 @@ public class InventoryPage {
         driver.findElement(cartIcon).click();
     }
 }
+
+// version 2

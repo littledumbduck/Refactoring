@@ -30,3 +30,5 @@ public class CleanSauceTest extends BaseTest {
         assertTrue(driver.getCurrentUrl().contains("cart.html"));
     }
 }
+
+// version 2
